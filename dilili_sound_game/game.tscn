@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqpg1j3akdesa"]
+
+[ext_resource type="PackedScene" uid="uid://lqnblbtfrsc5" path="res://animal.tscn" id="1_80nbo"]
+[ext_resource type="Texture2D" uid="uid://dbxf5838qvupn" path="res://assets/images/Cartoon_green_texture_grass.jpg" id="1_e2o6t"]
+[ext_resource type="Texture2D" uid="uid://0y5w6igrogqh" path="res://assets/images/wolf_PNG4605.png" id="3_fc0e3"]
+[ext_resource type="AudioStream" uid="uid://danowdurac37n" path="res://assets/sounds/wolf.mp3" id="4_7jktm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fc0e3"]
+size = Vector2(188, 120)
+
+[node name="Game" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(607.688, 400.688)
+scale = Vector2(0.291007, 0.193575)
+texture = ExtResource("1_e2o6t")
+
+[node name="Animal" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Animal" index="0"]
+texture = ExtResource("3_fc0e3")
+
+[node name="AudioStreamPlayer2D" parent="Animal" index="1"]
+stream = ExtResource("4_7jktm")
+
+[node name="CollisionShape2D" parent="Animal/Area2D" index="0"]
+position = Vector2(594, 294)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Animal2" parent="." instance=ExtResource("1_80nbo")]
+position = Vector2(-225, 1)
+
+[node name="CollisionShape2D" parent="Animal2/Area2D" index="0"]
+position = Vector2(593, 298)
+
+[editable path="Animal"]
+[editable path="Animal2"]
