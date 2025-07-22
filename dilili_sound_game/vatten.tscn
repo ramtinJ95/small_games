@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://b22hqw5qx47kp"]
+
+[ext_resource type="Texture2D" uid="uid://b21dbo4niu7c6" path="res://assets/images/2_game_background.png" id="1_7pmi0"]
+[ext_resource type="Script" uid="uid://by8wd7kaqlk16" path="res://back_button.gd" id="2_qagqp"]
+
+[node name="Vatten" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(2139, 1181.5)
+scale = Vector2(2.20937, 2.15833)
+texture = ExtResource("1_7pmi0")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 1420.0
+offset_top = 22.0
+offset_right = 1707.0
+offset_bottom = 110.0
+theme_override_font_sizes/font_size = 42
+text = "Back to menu"
+script = ExtResource("2_qagqp")
+
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]

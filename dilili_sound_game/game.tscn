@@ -1,38 +1,246 @@
-[gd_scene load_steps=6 format=3 uid="uid://cqpg1j3akdesa"]
+[gd_scene load_steps=31 format=3 uid="uid://cqpg1j3akdesa"]
 
 [ext_resource type="PackedScene" uid="uid://lqnblbtfrsc5" path="res://animal.tscn" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://dbxf5838qvupn" path="res://assets/images/Cartoon_green_texture_grass.jpg" id="1_e2o6t"]
 [ext_resource type="Texture2D" uid="uid://0y5w6igrogqh" path="res://assets/images/wolf_PNG4605.png" id="3_fc0e3"]
 [ext_resource type="AudioStream" uid="uid://danowdurac37n" path="res://assets/sounds/wolf.mp3" id="4_7jktm"]
+[ext_resource type="Script" uid="uid://by8wd7kaqlk16" path="res://back_button.gd" id="5_7jktm"]
+[ext_resource type="Texture2D" uid="uid://btysv2v5ty0j2" path="res://assets/images/pngimg.com - cat_PNG50533.png" id="5_eow3j"]
+[ext_resource type="Texture2D" uid="uid://dagsmjncs3kwm" path="res://assets/images/pngimg.com - horse_PNG2558.png" id="5_ryrav"]
+[ext_resource type="AudioStream" uid="uid://b6brsetytfwih" path="res://assets/sounds/cow.mp3" id="6_eow3j"]
+[ext_resource type="AudioStream" uid="uid://2vnwfhxx8at" path="res://assets/sounds/cat.mp3" id="6_hb5m1"]
+[ext_resource type="Texture2D" uid="uid://bpp0jsuj6bj5g" path="res://assets/images/pngimg.com - chicken_PNG2172.png" id="6_j5wjh"]
+[ext_resource type="AudioStream" uid="uid://b05u6h2u5yd2f" path="res://assets/sounds/chicken.mp3" id="7_e36ub"]
+[ext_resource type="Texture2D" uid="uid://dcjsddmhsag4l" path="res://assets/images/pngimg.com - cock_PNG19930.png" id="7_vef74"]
+[ext_resource type="Texture2D" uid="uid://cykanohbm85gx" path="res://assets/images/pngimg.com - cow_PNG50628.png" id="8_hve3p"]
+[ext_resource type="Texture2D" uid="uid://b6ycullrmmlvn" path="res://assets/images/pngimg.com - dog_PNG50371.png" id="9_mfdv2"]
+[ext_resource type="Texture2D" uid="uid://kbajcr32f2yx" path="res://assets/images/pngimg.com - donkey_PNG45.png" id="10_iotsf"]
+[ext_resource type="AudioStream" uid="uid://usuntipjmxr6" path="res://assets/sounds/cock.mp3" id="10_x5p1p"]
+[ext_resource type="Texture2D" uid="uid://b74fv4pd6837l" path="res://assets/images/pngimg.com - duck_PNG5030.png" id="11_lc2xo"]
+[ext_resource type="Texture2D" uid="uid://7oflc0uah52p" path="res://assets/images/pngimg.com - goat_PNG13152.png" id="12_215e1"]
+[ext_resource type="Texture2D" uid="uid://b1xoa26vyrv1v" path="res://assets/images/pngimg.com - pig_PNG2206.png" id="13_7sc4i"]
+[ext_resource type="Texture2D" uid="uid://c21q8ovi6hc0v" path="res://assets/images/pngimg.com - sheep_PNG2181.png" id="14_80cx4"]
+[ext_resource type="AudioStream" uid="uid://b2owbmr1inmyf" path="res://assets/sounds/dog.mp3" id="14_qhcbd"]
+[ext_resource type="Texture2D" uid="uid://ctkhwh0rqylc1" path="res://assets/images/pngimg.com - turkey_PNG58610.png" id="15_e8heu"]
+[ext_resource type="AudioStream" uid="uid://2pyde0ekjl0m" path="res://assets/sounds/sheep.mp3" id="16_boyg6"]
+[ext_resource type="AudioStream" uid="uid://lan2rl01a15y" path="res://assets/sounds/donkey.mp3" id="16_f1jbl"]
+[ext_resource type="AudioStream" uid="uid://badn33hinvwii" path="res://assets/sounds/duck.mp3" id="18_vaj68"]
+[ext_resource type="AudioStream" uid="uid://cl1ppskfgcd0o" path="res://assets/sounds/goat.mp3" id="20_i2p71"]
+[ext_resource type="AudioStream" uid="uid://ddolhh14mrmqi" path="res://assets/sounds/pig.mp3" id="22_xa8c5"]
+[ext_resource type="AudioStream" uid="uid://gsauewssdqmg" path="res://assets/sounds/turkey.mp3" id="26_5b14r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fc0e3"]
-size = Vector2(188, 120)
+size = Vector2(267, 212)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ryrav"]
+size = Vector2(276, 214)
 
 [node name="Game" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(607.688, 400.688)
-scale = Vector2(0.291007, 0.193575)
+position = Vector2(1460.84, 945.344)
+scale = Vector2(0.699859, 0.453399)
 texture = ExtResource("1_e2o6t")
 
-[node name="Animal" parent="." instance=ExtResource("1_80nbo")]
+[node name="Wolf" parent="." instance=ExtResource("1_80nbo")]
 
-[node name="Sprite2D" parent="Animal" index="0"]
+[node name="Sprite2D" parent="Wolf" index="0"]
+position = Vector2(871, 199)
 texture = ExtResource("3_fc0e3")
 
-[node name="AudioStreamPlayer2D" parent="Animal" index="1"]
+[node name="AudioStreamPlayer2D" parent="Wolf" index="1"]
 stream = ExtResource("4_7jktm")
 
-[node name="CollisionShape2D" parent="Animal/Area2D" index="0"]
-position = Vector2(594, 294)
+[node name="CollisionShape2D" parent="Wolf/Area2D" index="0"]
+position = Vector2(875, 194)
 shape = SubResource("RectangleShape2D_fc0e3")
 
-[node name="Animal2" parent="." instance=ExtResource("1_80nbo")]
-position = Vector2(-225, 1)
+[node name="Cat" parent="." instance=ExtResource("1_80nbo")]
 
-[node name="CollisionShape2D" parent="Animal2/Area2D" index="0"]
-position = Vector2(593, 298)
+[node name="Sprite2D" parent="Cat" index="0"]
+position = Vector2(1211, 180)
+scale = Vector2(0.285556, 0.215)
+texture = ExtResource("5_eow3j")
 
-[editable path="Animal"]
-[editable path="Animal2"]
+[node name="AudioStreamPlayer2D" parent="Cat" index="1"]
+stream = ExtResource("6_hb5m1")
+
+[node name="CollisionShape2D" parent="Cat/Area2D" index="0"]
+position = Vector2(1212, 191)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Chicken" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Chicken" index="0"]
+position = Vector2(1711.12, 203.625)
+scale = Vector2(0.128927, 0.0894587)
+texture = ExtResource("6_j5wjh")
+
+[node name="AudioStreamPlayer2D" parent="Chicken" index="1"]
+stream = ExtResource("7_e36ub")
+
+[node name="CollisionShape2D" parent="Chicken/Area2D" index="0"]
+position = Vector2(1723, 191)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Cock" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Cock" index="0"]
+position = Vector2(2122, 205)
+scale = Vector2(0.678125, 0.43911)
+texture = ExtResource("7_vef74")
+
+[node name="AudioStreamPlayer2D" parent="Cock" index="1"]
+stream = ExtResource("10_x5p1p")
+
+[node name="CollisionShape2D" parent="Cock/Area2D" index="0"]
+position = Vector2(2132, 197)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Cow" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Cow" index="0"]
+position = Vector2(312, 568)
+scale = Vector2(0.139111, 0.11108)
+texture = ExtResource("8_hve3p")
+
+[node name="AudioStreamPlayer2D" parent="Cow" index="1"]
+stream = ExtResource("6_eow3j")
+
+[node name="CollisionShape2D" parent="Cow/Area2D" index="0"]
+position = Vector2(329, 555)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Dog" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Dog" index="0"]
+position = Vector2(730, 553)
+scale = Vector2(0.382857, 0.34)
+texture = ExtResource("9_mfdv2")
+
+[node name="AudioStreamPlayer2D" parent="Dog" index="1"]
+stream = ExtResource("14_qhcbd")
+
+[node name="CollisionShape2D" parent="Dog/Area2D" index="0"]
+position = Vector2(735, 558)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Donkey" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Donkey" index="0"]
+position = Vector2(1136, 553)
+scale = Vector2(0.236431, 0.239605)
+texture = ExtResource("10_iotsf")
+
+[node name="AudioStreamPlayer2D" parent="Donkey" index="1"]
+stream = ExtResource("16_f1jbl")
+
+[node name="CollisionShape2D" parent="Donkey/Area2D" index="0"]
+position = Vector2(1159, 561)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Duck" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Duck" index="0"]
+position = Vector2(1606, 539)
+scale = Vector2(0.096, 0.0815686)
+texture = ExtResource("11_lc2xo")
+
+[node name="AudioStreamPlayer2D" parent="Duck" index="1"]
+stream = ExtResource("18_vaj68")
+
+[node name="CollisionShape2D" parent="Duck/Area2D" index="0"]
+position = Vector2(1623, 562)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Goat" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Goat" index="0"]
+position = Vector2(2108, 559)
+scale = Vector2(0.106314, 0.102847)
+texture = ExtResource("12_215e1")
+
+[node name="AudioStreamPlayer2D" parent="Goat" index="1"]
+stream = ExtResource("20_i2p71")
+
+[node name="CollisionShape2D" parent="Goat/Area2D" index="0"]
+position = Vector2(2107, 562)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Pig" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Pig" index="0"]
+position = Vector2(316, 898)
+scale = Vector2(0.408333, 0.403333)
+texture = ExtResource("13_7sc4i")
+
+[node name="AudioStreamPlayer2D" parent="Pig" index="1"]
+stream = ExtResource("22_xa8c5")
+
+[node name="CollisionShape2D" parent="Pig/Area2D" index="0"]
+position = Vector2(312, 891)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Sheep" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Sheep" index="0"]
+position = Vector2(727, 896)
+texture = ExtResource("14_80cx4")
+
+[node name="AudioStreamPlayer2D" parent="Sheep" index="1"]
+stream = ExtResource("16_boyg6")
+
+[node name="CollisionShape2D" parent="Sheep/Area2D" index="0"]
+position = Vector2(731.5, 904)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Turkey" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Turkey" index="0"]
+position = Vector2(1149, 886)
+scale = Vector2(0.486122, 0.509869)
+texture = ExtResource("15_e8heu")
+
+[node name="AudioStreamPlayer2D" parent="Turkey" index="1"]
+stream = ExtResource("26_5b14r")
+
+[node name="CollisionShape2D" parent="Turkey/Area2D" index="0"]
+position = Vector2(1165, 905)
+shape = SubResource("RectangleShape2D_fc0e3")
+
+[node name="Horse" parent="." instance=ExtResource("1_80nbo")]
+
+[node name="Sprite2D" parent="Horse" index="0"]
+position = Vector2(348, 180)
+scale = Vector2(0.735795, 0.657729)
+texture = ExtResource("5_ryrav")
+
+[node name="CollisionShape2D" parent="Horse/Area2D" index="0"]
+position = Vector2(351, 182)
+shape = SubResource("RectangleShape2D_ryrav")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 920.0
+offset_top = 8.0
+offset_right = 1143.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 42
+text = "Back to menu"
+script = ExtResource("5_7jktm")
+
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
+
+[editable path="Wolf"]
+[editable path="Cat"]
+[editable path="Chicken"]
+[editable path="Cock"]
+[editable path="Cow"]
+[editable path="Dog"]
+[editable path="Donkey"]
+[editable path="Duck"]
+[editable path="Goat"]
+[editable path="Pig"]
+[editable path="Sheep"]
+[editable path="Turkey"]
+[editable path="Horse"]

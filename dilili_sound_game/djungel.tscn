@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl4ndqk8lxbug"]
+
+[ext_resource type="Texture2D" uid="uid://bh162t6s55130" path="res://assets/images/Cartoon_Forest_BG_03.png" id="1_3v6bj"]
+[ext_resource type="Script" uid="uid://by8wd7kaqlk16" path="res://back_button.gd" id="2_g7p1p"]
+
+[node name="Djungel" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1307.5, 1273.5)
+scale = Vector2(1.73385, 2.33056)
+texture = ExtResource("1_3v6bj")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 1074.0
+offset_top = 16.0
+offset_right = 1361.0
+offset_bottom = 104.0
+theme_override_font_sizes/font_size = 42
+text = "Back to menu"
+script = ExtResource("2_g7p1p")
+
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
