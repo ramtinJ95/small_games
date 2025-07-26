@@ -46,20 +46,20 @@ texture = ExtResource("1_e2o6t")
 [node name="Wolf" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Wolf" index="0"]
-position = Vector2(871, 199)
+position = Vector2(463, 355)
 texture = ExtResource("3_fc0e3")
 
 [node name="AudioStreamPlayer2D" parent="Wolf" index="1"]
 stream = ExtResource("4_7jktm")
 
 [node name="CollisionShape2D" parent="Wolf/Area2D" index="0"]
-position = Vector2(875, 194)
+position = Vector2(461, 353)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Cat" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Cat" index="0"]
-position = Vector2(1211, 180)
+position = Vector2(1020, 291)
 scale = Vector2(0.285556, 0.215)
 texture = ExtResource("5_eow3j")
 
@@ -67,13 +67,13 @@ texture = ExtResource("5_eow3j")
 stream = ExtResource("6_hb5m1")
 
 [node name="CollisionShape2D" parent="Cat/Area2D" index="0"]
-position = Vector2(1212, 191)
+position = Vector2(1022, 295)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Chicken" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Chicken" index="0"]
-position = Vector2(1711.12, 203.625)
+position = Vector2(1817, 248)
 scale = Vector2(0.128927, 0.0894587)
 texture = ExtResource("6_j5wjh")
 
@@ -81,13 +81,13 @@ texture = ExtResource("6_j5wjh")
 stream = ExtResource("7_e36ub")
 
 [node name="CollisionShape2D" parent="Chicken/Area2D" index="0"]
-position = Vector2(1723, 191)
+position = Vector2(1839, 253)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Cock" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Cock" index="0"]
-position = Vector2(2122, 205)
+position = Vector2(2397, 328)
 scale = Vector2(0.678125, 0.43911)
 texture = ExtResource("7_vef74")
 
@@ -95,13 +95,13 @@ texture = ExtResource("7_vef74")
 stream = ExtResource("10_x5p1p")
 
 [node name="CollisionShape2D" parent="Cock/Area2D" index="0"]
-position = Vector2(2132, 197)
+position = Vector2(2402, 327)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Cow" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Cow" index="0"]
-position = Vector2(312, 568)
+position = Vector2(312, 727)
 scale = Vector2(0.139111, 0.11108)
 texture = ExtResource("8_hve3p")
 
@@ -109,13 +109,13 @@ texture = ExtResource("8_hve3p")
 stream = ExtResource("6_eow3j")
 
 [node name="CollisionShape2D" parent="Cow/Area2D" index="0"]
-position = Vector2(329, 555)
+position = Vector2(327, 724)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Dog" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Dog" index="0"]
-position = Vector2(730, 553)
+position = Vector2(764, 741)
 scale = Vector2(0.382857, 0.34)
 texture = ExtResource("9_mfdv2")
 
@@ -123,13 +123,13 @@ texture = ExtResource("9_mfdv2")
 stream = ExtResource("14_qhcbd")
 
 [node name="CollisionShape2D" parent="Dog/Area2D" index="0"]
-position = Vector2(735, 558)
+position = Vector2(761, 743)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Donkey" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Donkey" index="0"]
-position = Vector2(1136, 553)
+position = Vector2(1351, 616)
 scale = Vector2(0.236431, 0.239605)
 texture = ExtResource("10_iotsf")
 
@@ -137,13 +137,13 @@ texture = ExtResource("10_iotsf")
 stream = ExtResource("16_f1jbl")
 
 [node name="CollisionShape2D" parent="Donkey/Area2D" index="0"]
-position = Vector2(1159, 561)
+position = Vector2(1356, 616)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Duck" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Duck" index="0"]
-position = Vector2(1606, 539)
+position = Vector2(1944, 691)
 scale = Vector2(0.096, 0.0815686)
 texture = ExtResource("11_lc2xo")
 
@@ -151,13 +151,13 @@ texture = ExtResource("11_lc2xo")
 stream = ExtResource("18_vaj68")
 
 [node name="CollisionShape2D" parent="Duck/Area2D" index="0"]
-position = Vector2(1623, 562)
+position = Vector2(1955, 687)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Goat" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Goat" index="0"]
-position = Vector2(2108, 559)
+position = Vector2(2491, 805)
 scale = Vector2(0.106314, 0.102847)
 texture = ExtResource("12_215e1")
 
@@ -165,13 +165,13 @@ texture = ExtResource("12_215e1")
 stream = ExtResource("20_i2p71")
 
 [node name="CollisionShape2D" parent="Goat/Area2D" index="0"]
-position = Vector2(2107, 562)
+position = Vector2(2483, 808)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Pig" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Pig" index="0"]
-position = Vector2(316, 898)
+position = Vector2(299, 1089)
 scale = Vector2(0.408333, 0.403333)
 texture = ExtResource("13_7sc4i")
 
@@ -179,26 +179,26 @@ texture = ExtResource("13_7sc4i")
 stream = ExtResource("22_xa8c5")
 
 [node name="CollisionShape2D" parent="Pig/Area2D" index="0"]
-position = Vector2(312, 891)
+position = Vector2(288, 1101)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Sheep" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Sheep" index="0"]
-position = Vector2(727, 896)
+position = Vector2(865, 1084)
 texture = ExtResource("14_80cx4")
 
 [node name="AudioStreamPlayer2D" parent="Sheep" index="1"]
 stream = ExtResource("16_boyg6")
 
 [node name="CollisionShape2D" parent="Sheep/Area2D" index="0"]
-position = Vector2(731.5, 904)
+position = Vector2(880, 1090)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Turkey" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Turkey" index="0"]
-position = Vector2(1149, 886)
+position = Vector2(1486, 1036)
 scale = Vector2(0.486122, 0.509869)
 texture = ExtResource("15_e8heu")
 
@@ -206,30 +206,32 @@ texture = ExtResource("15_e8heu")
 stream = ExtResource("26_5b14r")
 
 [node name="CollisionShape2D" parent="Turkey/Area2D" index="0"]
-position = Vector2(1165, 905)
+position = Vector2(1497, 1057)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Horse" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Horse" index="0"]
-position = Vector2(348, 180)
+position = Vector2(2093, 1065)
 scale = Vector2(0.735795, 0.657729)
 texture = ExtResource("5_ryrav")
 
 [node name="CollisionShape2D" parent="Horse/Area2D" index="0"]
-position = Vector2(351, 182)
+position = Vector2(2104, 1064)
 shape = SubResource("RectangleShape2D_ryrav")
 
-[node name="BackButton" type="Button" parent="."]
-offset_left = 920.0
-offset_top = 8.0
-offset_right = 1143.0
-offset_bottom = 96.0
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 287.0
+offset_bottom = 66.0
+mouse_filter = 2
+
+[node name="BackButton" type="Button" parent="MarginContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 42
 text = "Back to menu"
 script = ExtResource("5_7jktm")
 
-[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
+[connection signal="pressed" from="MarginContainer/BackButton" to="MarginContainer/BackButton" method="_on_pressed"]
 
 [editable path="Wolf"]
 [editable path="Cat"]

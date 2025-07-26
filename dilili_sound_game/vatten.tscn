@@ -10,13 +10,17 @@ position = Vector2(2139, 1181.5)
 scale = Vector2(2.20937, 2.15833)
 texture = ExtResource("1_7pmi0")
 
-[node name="BackButton" type="Button" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 offset_left = 1420.0
 offset_top = 22.0
-offset_right = 1707.0
-offset_bottom = 110.0
+offset_right = 1460.0
+offset_bottom = 62.0
+mouse_filter = 2
+
+[node name="BackButton" type="Button" parent="MarginContainer"]
+layout_mode = 2
 theme_override_font_sizes/font_size = 42
 text = "Back to menu"
 script = ExtResource("2_qagqp")
 
-[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
+[connection signal="pressed" from="MarginContainer/BackButton" to="MarginContainer/BackButton" method="_on_pressed"]
