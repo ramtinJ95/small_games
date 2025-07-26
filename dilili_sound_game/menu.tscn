@@ -1,11 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://ef47efeqd8lp"]
+[gd_scene load_steps=3 format=3 uid="uid://ef47efeqd8lp"]
 
 [ext_resource type="Script" uid="uid://dnwjleptj6val" path="res://scripts/menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://dx21cea18v5oh" path="res://assets/images/menu_background.svg" id="2_ouk20"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_lti8b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1407.5, 652)
+scale = Vector2(0.731802, 0.591012)
+texture = ExtResource("2_ouk20")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0

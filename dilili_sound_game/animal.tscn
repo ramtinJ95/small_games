@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://lqnblbtfrsc5"]
 
 [ext_resource type="Texture2D" uid="uid://bnxau2ruf3e2d" path="res://icon.svg" id="1_23vr7"]
-[ext_resource type="AudioStream" uid="uid://chxs3ibj3nu0" path="res://assets/sounds/horse.mp3" id="3_ifcgm"]
+[ext_resource type="AudioStream" uid="uid://chxs3ibj3nu0" path="res://assets/sounds/farm_animals/horse.mp3" id="3_ifcgm"]
 [ext_resource type="Script" uid="uid://m3oobww5bo2p" path="res://scripts/area_2d.gd" id="3_suy7h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_23vr7"]

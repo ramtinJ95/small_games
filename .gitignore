@@ -16,6 +16,7 @@ data_*/
 mono_crash.*.json
 
 .DS_Store
+DS_Store
 
 dilili_sound_game/ios_export
 dilili_sound_game/assets

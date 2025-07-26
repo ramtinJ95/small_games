@@ -2,32 +2,32 @@
 
 [ext_resource type="PackedScene" uid="uid://lqnblbtfrsc5" path="res://animal.tscn" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://dbxf5838qvupn" path="res://assets/images/Cartoon_green_texture_grass.jpg" id="1_e2o6t"]
-[ext_resource type="Texture2D" uid="uid://0y5w6igrogqh" path="res://assets/images/wolf_PNG4605.png" id="3_fc0e3"]
-[ext_resource type="AudioStream" uid="uid://danowdurac37n" path="res://assets/sounds/wolf.mp3" id="4_7jktm"]
+[ext_resource type="Texture2D" uid="uid://0y5w6igrogqh" path="res://assets/images/farm_animals/wolf_PNG4605.png" id="3_fc0e3"]
+[ext_resource type="AudioStream" uid="uid://danowdurac37n" path="res://assets/sounds/farm_animals/wolf.mp3" id="4_7jktm"]
 [ext_resource type="Script" uid="uid://by8wd7kaqlk16" path="res://back_button.gd" id="5_7jktm"]
-[ext_resource type="Texture2D" uid="uid://btysv2v5ty0j2" path="res://assets/images/pngimg.com - cat_PNG50533.png" id="5_eow3j"]
-[ext_resource type="Texture2D" uid="uid://dagsmjncs3kwm" path="res://assets/images/pngimg.com - horse_PNG2558.png" id="5_ryrav"]
-[ext_resource type="AudioStream" uid="uid://b6brsetytfwih" path="res://assets/sounds/cow.mp3" id="6_eow3j"]
-[ext_resource type="AudioStream" uid="uid://2vnwfhxx8at" path="res://assets/sounds/cat.mp3" id="6_hb5m1"]
-[ext_resource type="Texture2D" uid="uid://bpp0jsuj6bj5g" path="res://assets/images/pngimg.com - chicken_PNG2172.png" id="6_j5wjh"]
-[ext_resource type="AudioStream" uid="uid://b05u6h2u5yd2f" path="res://assets/sounds/chicken.mp3" id="7_e36ub"]
-[ext_resource type="Texture2D" uid="uid://dcjsddmhsag4l" path="res://assets/images/pngimg.com - cock_PNG19930.png" id="7_vef74"]
-[ext_resource type="Texture2D" uid="uid://cykanohbm85gx" path="res://assets/images/pngimg.com - cow_PNG50628.png" id="8_hve3p"]
-[ext_resource type="Texture2D" uid="uid://b6ycullrmmlvn" path="res://assets/images/pngimg.com - dog_PNG50371.png" id="9_mfdv2"]
-[ext_resource type="Texture2D" uid="uid://kbajcr32f2yx" path="res://assets/images/pngimg.com - donkey_PNG45.png" id="10_iotsf"]
-[ext_resource type="AudioStream" uid="uid://usuntipjmxr6" path="res://assets/sounds/cock.mp3" id="10_x5p1p"]
-[ext_resource type="Texture2D" uid="uid://b74fv4pd6837l" path="res://assets/images/pngimg.com - duck_PNG5030.png" id="11_lc2xo"]
-[ext_resource type="Texture2D" uid="uid://7oflc0uah52p" path="res://assets/images/pngimg.com - goat_PNG13152.png" id="12_215e1"]
-[ext_resource type="Texture2D" uid="uid://b1xoa26vyrv1v" path="res://assets/images/pngimg.com - pig_PNG2206.png" id="13_7sc4i"]
-[ext_resource type="Texture2D" uid="uid://c21q8ovi6hc0v" path="res://assets/images/pngimg.com - sheep_PNG2181.png" id="14_80cx4"]
-[ext_resource type="AudioStream" uid="uid://b2owbmr1inmyf" path="res://assets/sounds/dog.mp3" id="14_qhcbd"]
-[ext_resource type="Texture2D" uid="uid://ctkhwh0rqylc1" path="res://assets/images/pngimg.com - turkey_PNG58610.png" id="15_e8heu"]
-[ext_resource type="AudioStream" uid="uid://2pyde0ekjl0m" path="res://assets/sounds/sheep.mp3" id="16_boyg6"]
-[ext_resource type="AudioStream" uid="uid://lan2rl01a15y" path="res://assets/sounds/donkey.mp3" id="16_f1jbl"]
-[ext_resource type="AudioStream" uid="uid://badn33hinvwii" path="res://assets/sounds/duck.mp3" id="18_vaj68"]
-[ext_resource type="AudioStream" uid="uid://cl1ppskfgcd0o" path="res://assets/sounds/goat.mp3" id="20_i2p71"]
-[ext_resource type="AudioStream" uid="uid://ddolhh14mrmqi" path="res://assets/sounds/pig.mp3" id="22_xa8c5"]
-[ext_resource type="AudioStream" uid="uid://gsauewssdqmg" path="res://assets/sounds/turkey.mp3" id="26_5b14r"]
+[ext_resource type="Texture2D" uid="uid://btysv2v5ty0j2" path="res://assets/images/farm_animals/pngimg.com - cat_PNG50533.png" id="5_eow3j"]
+[ext_resource type="Texture2D" uid="uid://dagsmjncs3kwm" path="res://assets/images/farm_animals/pngimg.com - horse_PNG2558.png" id="5_ryrav"]
+[ext_resource type="AudioStream" uid="uid://bhrhp15jpm8xn" path="res://assets/sounds/farm_animals/kitten.mp3" id="6_5b14r"]
+[ext_resource type="AudioStream" uid="uid://b6brsetytfwih" path="res://assets/sounds/farm_animals/cow.mp3" id="6_eow3j"]
+[ext_resource type="Texture2D" uid="uid://bpp0jsuj6bj5g" path="res://assets/images/farm_animals/pngimg.com - chicken_PNG2172.png" id="6_j5wjh"]
+[ext_resource type="AudioStream" uid="uid://b05u6h2u5yd2f" path="res://assets/sounds/farm_animals/chicken.mp3" id="7_e36ub"]
+[ext_resource type="Texture2D" uid="uid://dcjsddmhsag4l" path="res://assets/images/farm_animals/pngimg.com - cock_PNG19930.png" id="7_vef74"]
+[ext_resource type="Texture2D" uid="uid://cykanohbm85gx" path="res://assets/images/farm_animals/pngimg.com - cow_PNG50628.png" id="8_hve3p"]
+[ext_resource type="Texture2D" uid="uid://b6ycullrmmlvn" path="res://assets/images/farm_animals/pngimg.com - dog_PNG50371.png" id="9_mfdv2"]
+[ext_resource type="Texture2D" uid="uid://kbajcr32f2yx" path="res://assets/images/farm_animals/pngimg.com - donkey_PNG45.png" id="10_iotsf"]
+[ext_resource type="AudioStream" uid="uid://usuntipjmxr6" path="res://assets/sounds/farm_animals/cock.mp3" id="10_x5p1p"]
+[ext_resource type="Texture2D" uid="uid://b74fv4pd6837l" path="res://assets/images/farm_animals/pngimg.com - duck_PNG5030.png" id="11_lc2xo"]
+[ext_resource type="Texture2D" uid="uid://7oflc0uah52p" path="res://assets/images/farm_animals/pngimg.com - goat_PNG13152.png" id="12_215e1"]
+[ext_resource type="Texture2D" uid="uid://b1xoa26vyrv1v" path="res://assets/images/farm_animals/pngimg.com - pig_PNG2206.png" id="13_7sc4i"]
+[ext_resource type="Texture2D" uid="uid://c21q8ovi6hc0v" path="res://assets/images/farm_animals/pngimg.com - sheep_PNG2181.png" id="14_80cx4"]
+[ext_resource type="AudioStream" uid="uid://b2owbmr1inmyf" path="res://assets/sounds/farm_animals/dog.mp3" id="14_qhcbd"]
+[ext_resource type="Texture2D" uid="uid://ctkhwh0rqylc1" path="res://assets/images/farm_animals/pngimg.com - turkey_PNG58610.png" id="15_e8heu"]
+[ext_resource type="AudioStream" uid="uid://2pyde0ekjl0m" path="res://assets/sounds/farm_animals/sheep.mp3" id="16_boyg6"]
+[ext_resource type="AudioStream" uid="uid://lan2rl01a15y" path="res://assets/sounds/farm_animals/donkey.mp3" id="16_f1jbl"]
+[ext_resource type="AudioStream" uid="uid://badn33hinvwii" path="res://assets/sounds/farm_animals/duck.mp3" id="18_vaj68"]
+[ext_resource type="AudioStream" uid="uid://cl1ppskfgcd0o" path="res://assets/sounds/farm_animals/goat.mp3" id="20_i2p71"]
+[ext_resource type="AudioStream" uid="uid://ddolhh14mrmqi" path="res://assets/sounds/farm_animals/pig.mp3" id="22_xa8c5"]
+[ext_resource type="AudioStream" uid="uid://gsauewssdqmg" path="res://assets/sounds/farm_animals/turkey.mp3" id="26_5b14r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fc0e3"]
 size = Vector2(267, 212)
@@ -46,28 +46,28 @@ texture = ExtResource("1_e2o6t")
 [node name="Wolf" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Wolf" index="0"]
-position = Vector2(463, 355)
+position = Vector2(387, 324)
 texture = ExtResource("3_fc0e3")
 
 [node name="AudioStreamPlayer2D" parent="Wolf" index="1"]
 stream = ExtResource("4_7jktm")
 
 [node name="CollisionShape2D" parent="Wolf/Area2D" index="0"]
-position = Vector2(461, 353)
+position = Vector2(389, 313)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Cat" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Cat" index="0"]
-position = Vector2(1020, 291)
+position = Vector2(1159, 246)
 scale = Vector2(0.285556, 0.215)
 texture = ExtResource("5_eow3j")
 
 [node name="AudioStreamPlayer2D" parent="Cat" index="1"]
-stream = ExtResource("6_hb5m1")
+stream = ExtResource("6_5b14r")
 
 [node name="CollisionShape2D" parent="Cat/Area2D" index="0"]
-position = Vector2(1022, 295)
+position = Vector2(1160, 247)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Chicken" parent="." instance=ExtResource("1_80nbo")]
@@ -115,7 +115,7 @@ shape = SubResource("RectangleShape2D_fc0e3")
 [node name="Dog" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Dog" index="0"]
-position = Vector2(764, 741)
+position = Vector2(787, 595)
 scale = Vector2(0.382857, 0.34)
 texture = ExtResource("9_mfdv2")
 
@@ -123,7 +123,7 @@ texture = ExtResource("9_mfdv2")
 stream = ExtResource("14_qhcbd")
 
 [node name="CollisionShape2D" parent="Dog/Area2D" index="0"]
-position = Vector2(761, 743)
+position = Vector2(796, 596)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Donkey" parent="." instance=ExtResource("1_80nbo")]
@@ -185,14 +185,14 @@ shape = SubResource("RectangleShape2D_fc0e3")
 [node name="Sheep" parent="." instance=ExtResource("1_80nbo")]
 
 [node name="Sprite2D" parent="Sheep" index="0"]
-position = Vector2(865, 1084)
+position = Vector2(852, 1044)
 texture = ExtResource("14_80cx4")
 
 [node name="AudioStreamPlayer2D" parent="Sheep" index="1"]
 stream = ExtResource("16_boyg6")
 
 [node name="CollisionShape2D" parent="Sheep/Area2D" index="0"]
-position = Vector2(880, 1090)
+position = Vector2(874, 1048)
 shape = SubResource("RectangleShape2D_fc0e3")
 
 [node name="Turkey" parent="." instance=ExtResource("1_80nbo")]
@@ -220,18 +220,16 @@ texture = ExtResource("5_ryrav")
 position = Vector2(2104, 1064)
 shape = SubResource("RectangleShape2D_ryrav")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-offset_right = 287.0
-offset_bottom = 66.0
-mouse_filter = 2
-
-[node name="BackButton" type="Button" parent="MarginContainer"]
-layout_mode = 2
+[node name="BackButton" type="Button" parent="."]
+offset_left = 98.0
+offset_top = 6.0
+offset_right = 385.0
+offset_bottom = 72.0
 theme_override_font_sizes/font_size = 42
 text = "Back to menu"
 script = ExtResource("5_7jktm")
 
-[connection signal="pressed" from="MarginContainer/BackButton" to="MarginContainer/BackButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
 
 [editable path="Wolf"]
 [editable path="Cat"]

@@ -1,24 +1,174 @@
-[gd_scene load_steps=3 format=3 uid="uid://dl4ndqk8lxbug"]
+[gd_scene load_steps=21 format=3 uid="uid://dl4ndqk8lxbug"]
 
-[ext_resource type="Texture2D" uid="uid://bh162t6s55130" path="res://assets/images/Cartoon_Forest_BG_03.png" id="1_3v6bj"]
+[ext_resource type="Texture2D" uid="uid://c28r1wkl5ks4o" path="res://assets/images/vecteezy_illustration-of-a-summer-forest-landscape-in-cartoon-style_6033138.svg" id="1_g7p1p"]
 [ext_resource type="Script" uid="uid://by8wd7kaqlk16" path="res://back_button.gd" id="2_g7p1p"]
+[ext_resource type="Texture2D" uid="uid://8u4rog5qoy1" path="res://assets/images/jungel_animals/elephant.png" id="3_7hekn"]
+[ext_resource type="PackedScene" uid="uid://lqnblbtfrsc5" path="res://animal.tscn" id="3_tqu86"]
+[ext_resource type="AudioStream" uid="uid://x1c4g25yd8gu" path="res://assets/sounds/jungel_animals/elephant.mp3" id="4_ctwcs"]
+[ext_resource type="Texture2D" uid="uid://bs5pqndlhegh8" path="res://assets/images/jungel_animals/lion.png" id="5_78tcu"]
+[ext_resource type="Texture2D" uid="uid://b5g6b7voto6jq" path="res://assets/images/jungel_animals/hyena.png" id="6_78tcu"]
+[ext_resource type="AudioStream" uid="uid://d0qgwfuer54iy" path="res://assets/sounds/jungel_animals/lion.mp3" id="6_to5q1"]
+[ext_resource type="Texture2D" uid="uid://dm8bfxmir48a1" path="res://assets/images/jungel_animals/crocodile.png" id="7_uic1k"]
+[ext_resource type="Texture2D" uid="uid://6jaleanyujwh" path="res://assets/images/jungel_animals/monkey.png" id="8_eyv3b"]
+[ext_resource type="AudioStream" uid="uid://bvitxhh41a8ks" path="res://assets/sounds/jungel_animals/hyena.mp3" id="8_m0i80"]
+[ext_resource type="Texture2D" uid="uid://bd6f6x0j2uimw" path="res://assets/images/jungel_animals/rhino.png" id="9_tw8l7"]
+[ext_resource type="AudioStream" uid="uid://c5685yge0uls6" path="res://assets/sounds/jungel_animals/crocodile-hissing-372480.mp3" id="10_0vdgj"]
+[ext_resource type="Texture2D" uid="uid://3mrq000px5na" path="res://assets/images/jungel_animals/snake.png" id="10_pqjcp"]
+[ext_resource type="Texture2D" uid="uid://c1p2164fqsa7c" path="res://assets/images/jungel_animals/tiger.png" id="11_pqjcp"]
+[ext_resource type="AudioStream" uid="uid://fbwn2pgnrt7x" path="res://assets/sounds/jungel_animals/monkey.mp3" id="12_tcgxf"]
+[ext_resource type="AudioStream" uid="uid://d1tk14voy6mts" path="res://assets/sounds/jungel_animals/rhino.mp3" id="14_k7bv6"]
+[ext_resource type="AudioStream" uid="uid://bo3kbm3amf5bq" path="res://assets/sounds/jungel_animals/snake.mp3" id="16_nbmc3"]
+[ext_resource type="AudioStream" uid="uid://diy0xk6lgcl6d" path="res://assets/sounds/jungel_animals/tiger.mp3" id="18_0vdgj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_78tcu"]
+size = Vector2(267, 212)
 
 [node name="Djungel" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1307.5, 1273.5)
-scale = Vector2(1.73385, 2.33056)
-texture = ExtResource("1_3v6bj")
+z_index = -1
+position = Vector2(1405, 668)
+scale = Vector2(0.872367, 0.659874)
+texture = ExtResource("1_g7p1p")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
-mouse_filter = 2
+[node name="Elephant" parent="." instance=ExtResource("3_tqu86")]
 
-[node name="BackButton" type="Button" parent="MarginContainer"]
-layout_mode = 2
+[node name="Sprite2D" parent="Elephant" index="0"]
+position = Vector2(958, 1060.5)
+scale = Vector2(0.47532, 0.38715)
+texture = ExtResource("3_7hekn")
+
+[node name="AudioStreamPlayer2D" parent="Elephant" index="1"]
+position = Vector2(1303, 673)
+stream = ExtResource("4_ctwcs")
+
+[node name="CollisionShape2D" parent="Elephant/Area2D" index="0"]
+position = Vector2(951, 1073)
+shape = SubResource("RectangleShape2D_78tcu")
+
+[node name="Lion" parent="." instance=ExtResource("3_tqu86")]
+
+[node name="Sprite2D" parent="Lion" index="0"]
+position = Vector2(328, 883)
+scale = Vector2(0.417969, 0.217111)
+texture = ExtResource("5_78tcu")
+
+[node name="AudioStreamPlayer2D" parent="Lion" index="1"]
+position = Vector2(1303, 673)
+stream = ExtResource("6_to5q1")
+
+[node name="CollisionShape2D" parent="Lion/Area2D" index="0"]
+position = Vector2(353, 886)
+shape = SubResource("RectangleShape2D_78tcu")
+
+[node name="Hyena" parent="." instance=ExtResource("3_tqu86")]
+
+[node name="Sprite2D" parent="Hyena" index="0"]
+position = Vector2(1467, 1080)
+scale = Vector2(0.302825, 0.310457)
+texture = ExtResource("6_78tcu")
+
+[node name="AudioStreamPlayer2D" parent="Hyena" index="1"]
+position = Vector2(1303, 673)
+stream = ExtResource("8_m0i80")
+
+[node name="CollisionShape2D" parent="Hyena/Area2D" index="0"]
+position = Vector2(1471, 1070)
+shape = SubResource("RectangleShape2D_78tcu")
+
+[node name="Crocodile" parent="." instance=ExtResource("3_tqu86")]
+
+[node name="Sprite2D" parent="Crocodile" index="0"]
+position = Vector2(2022, 872)
+scale = Vector2(0.118375, 0.176656)
+texture = ExtResource("7_uic1k")
+
+[node name="AudioStreamPlayer2D" parent="Crocodile" index="1"]
+position = Vector2(1303, 673)
+stream = ExtResource("10_0vdgj")
+
+[node name="CollisionShape2D" parent="Crocodile/Area2D" index="0"]
+position = Vector2(2028, 869)
+shape = SubResource("RectangleShape2D_78tcu")
+
+[node name="Monkey" parent="." instance=ExtResource("3_tqu86")]
+
+[node name="Sprite2D" parent="Monkey" index="0"]
+position = Vector2(1977.5, 1123)
+scale = Vector2(0.628334, 0.476667)
+texture = ExtResource("8_eyv3b")
+
+[node name="AudioStreamPlayer2D" parent="Monkey" index="1"]
+position = Vector2(1303, 673)
+stream = ExtResource("12_tcgxf")
+
+[node name="CollisionShape2D" parent="Monkey/Area2D" index="0"]
+position = Vector2(1942, 1113)
+shape = SubResource("RectangleShape2D_78tcu")
+
+[node name="Rhino" parent="." instance=ExtResource("3_tqu86")]
+
+[node name="Sprite2D" parent="Rhino" index="0"]
+position = Vector2(1302.5, 727)
+scale = Vector2(0.43125, 0.491557)
+texture = ExtResource("9_tw8l7")
+
+[node name="AudioStreamPlayer2D" parent="Rhino" index="1"]
+position = Vector2(1303, 673)
+stream = ExtResource("14_k7bv6")
+
+[node name="CollisionShape2D" parent="Rhino/Area2D" index="0"]
+visible = false
+position = Vector2(1296, 719)
+shape = SubResource("RectangleShape2D_78tcu")
+
+[node name="Snake" parent="." instance=ExtResource("3_tqu86")]
+
+[node name="Sprite2D" parent="Snake" index="0"]
+position = Vector2(1789, 493.5)
+scale = Vector2(0.138875, 0.14183)
+texture = ExtResource("10_pqjcp")
+
+[node name="AudioStreamPlayer2D" parent="Snake" index="1"]
+position = Vector2(1303, 673)
+stream = ExtResource("16_nbmc3")
+
+[node name="CollisionShape2D" parent="Snake/Area2D" index="0"]
+visible = false
+position = Vector2(1784, 493)
+shape = SubResource("RectangleShape2D_78tcu")
+
+[node name="Tiger" parent="." instance=ExtResource("3_tqu86")]
+
+[node name="Sprite2D" parent="Tiger" index="0"]
+position = Vector2(825.5, 692.5)
+scale = Vector2(0.598, 0.522)
+texture = ExtResource("11_pqjcp")
+
+[node name="AudioStreamPlayer2D" parent="Tiger" index="1"]
+position = Vector2(1303, 673)
+stream = ExtResource("18_0vdgj")
+
+[node name="CollisionShape2D" parent="Tiger/Area2D" index="0"]
+position = Vector2(835, 700)
+shape = SubResource("RectangleShape2D_78tcu")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 217.0
+offset_top = 12.0
+offset_right = 504.0
+offset_bottom = 78.0
 theme_override_font_sizes/font_size = 42
 text = "Back to menu"
 script = ExtResource("2_g7p1p")
 
-[connection signal="pressed" from="MarginContainer/BackButton" to="MarginContainer/BackButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
+
+[editable path="Elephant"]
+[editable path="Lion"]
+[editable path="Hyena"]
+[editable path="Crocodile"]
+[editable path="Monkey"]
+[editable path="Rhino"]
+[editable path="Snake"]
+[editable path="Tiger"]

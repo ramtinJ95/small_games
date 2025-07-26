@@ -1,26 +1,150 @@
-[gd_scene load_steps=3 format=3 uid="uid://b22hqw5qx47kp"]
+[gd_scene load_steps=13 format=3 uid="uid://b22hqw5qx47kp"]
 
 [ext_resource type="Texture2D" uid="uid://b21dbo4niu7c6" path="res://assets/images/2_game_background.png" id="1_7pmi0"]
 [ext_resource type="Script" uid="uid://by8wd7kaqlk16" path="res://back_button.gd" id="2_qagqp"]
+[ext_resource type="PackedScene" uid="uid://lqnblbtfrsc5" path="res://animal.tscn" id="3_v6pwd"]
+[ext_resource type="Texture2D" uid="uid://csofmdfl1f13d" path="res://assets/images/water_animals/dolphin.png" id="4_ato5b"]
+[ext_resource type="Texture2D" uid="uid://l7vpx8c7muok" path="res://assets/images/water_animals/frog.png" id="6_ato5b"]
+[ext_resource type="Texture2D" uid="uid://b20uno1wuxayb" path="res://assets/images/water_animals/penguin.png" id="7_0wdfu"]
+[ext_resource type="Texture2D" uid="uid://ceiqqf75nm31u" path="res://assets/images/water_animals/polar_bear.png" id="8_82saj"]
+[ext_resource type="Texture2D" uid="uid://w52cr6fismuh" path="res://assets/images/water_animals/sea_lion.png" id="9_fakhp"]
+[ext_resource type="Texture2D" uid="uid://cydhpatri6kga" path="res://assets/images/water_animals/shark.png" id="10_cjmr4"]
+[ext_resource type="Texture2D" uid="uid://h6jy8vdrqiac" path="res://assets/images/water_animals/whale.png" id="11_cjmr4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wdfu"]
+size = Vector2(267, 212)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_82saj"]
+size = Vector2(377, 267)
 
 [node name="Vatten" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(2139, 1181.5)
-scale = Vector2(2.20937, 2.15833)
+z_index = -1
+position = Vector2(2121, 1168)
+scale = Vector2(2.22812, 2.18333)
 texture = ExtResource("1_7pmi0")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-offset_left = 1420.0
-offset_top = 22.0
-offset_right = 1460.0
-offset_bottom = 62.0
-mouse_filter = 2
+[node name="dolphin" parent="." instance=ExtResource("3_v6pwd")]
 
-[node name="BackButton" type="Button" parent="MarginContainer"]
-layout_mode = 2
+[node name="Sprite2D" parent="dolphin" index="0"]
+position = Vector2(943, 1079)
+scale = Vector2(0.161324, 0.156957)
+texture = ExtResource("4_ato5b")
+
+[node name="AudioStreamPlayer2D" parent="dolphin" index="1"]
+position = Vector2(1303, 673)
+stream = null
+
+[node name="CollisionShape2D" parent="dolphin/Area2D" index="0"]
+position = Vector2(951, 1073)
+shape = SubResource("RectangleShape2D_0wdfu")
+
+[node name="frog" parent="." instance=ExtResource("3_v6pwd")]
+
+[node name="Sprite2D" parent="frog" index="0"]
+position = Vector2(1763.5, 1131)
+scale = Vector2(0.138454, 0.169312)
+texture = ExtResource("6_ato5b")
+
+[node name="AudioStreamPlayer2D" parent="frog" index="1"]
+position = Vector2(1303, 673)
+stream = null
+
+[node name="CollisionShape2D" parent="frog/Area2D" index="0"]
+position = Vector2(1764, 1123)
+shape = SubResource("RectangleShape2D_0wdfu")
+
+[node name="penguin" parent="." instance=ExtResource("3_v6pwd")]
+
+[node name="Sprite2D" parent="penguin" index="0"]
+position = Vector2(2416, 960)
+scale = Vector2(0.47532, 0.38715)
+texture = ExtResource("7_0wdfu")
+
+[node name="AudioStreamPlayer2D" parent="penguin" index="1"]
+position = Vector2(1303, 673)
+stream = null
+
+[node name="CollisionShape2D" parent="penguin/Area2D" index="0"]
+position = Vector2(2417, 950)
+shape = SubResource("RectangleShape2D_0wdfu")
+
+[node name="polar_bear" parent="." instance=ExtResource("3_v6pwd")]
+
+[node name="Sprite2D" parent="polar_bear" index="0"]
+position = Vector2(2057, 478.5)
+scale = Vector2(0.077157, 0.0655853)
+texture = ExtResource("8_82saj")
+
+[node name="AudioStreamPlayer2D" parent="polar_bear" index="1"]
+position = Vector2(1303, 673)
+stream = null
+
+[node name="CollisionShape2D" parent="polar_bear/Area2D" index="0"]
+position = Vector2(2055.5, 474.5)
+shape = SubResource("RectangleShape2D_82saj")
+
+[node name="sea_lion" parent="." instance=ExtResource("3_v6pwd")]
+
+[node name="Sprite2D" parent="sea_lion" index="0"]
+position = Vector2(1201, 505)
+scale = Vector2(0.08041, 0.067075)
+texture = ExtResource("9_fakhp")
+
+[node name="AudioStreamPlayer2D" parent="sea_lion" index="1"]
+position = Vector2(1303, 673)
+stream = null
+
+[node name="CollisionShape2D" parent="sea_lion/Area2D" index="0"]
+position = Vector2(1194, 504)
+shape = SubResource("RectangleShape2D_0wdfu")
+
+[node name="shark" parent="." instance=ExtResource("3_v6pwd")]
+
+[node name="Sprite2D" parent="shark" index="0"]
+position = Vector2(678, 773)
+scale = Vector2(0.0478029, 0.0691177)
+texture = ExtResource("10_cjmr4")
+
+[node name="AudioStreamPlayer2D" parent="shark" index="1"]
+position = Vector2(1303, 673)
+stream = null
+
+[node name="CollisionShape2D" parent="shark/Area2D" index="0"]
+position = Vector2(678, 782)
+shape = SubResource("RectangleShape2D_0wdfu")
+
+[node name="whale" parent="." instance=ExtResource("3_v6pwd")]
+
+[node name="Sprite2D" parent="whale" index="0"]
+position = Vector2(494, 382.75)
+scale = Vector2(0.282704, 0.599768)
+texture = ExtResource("11_cjmr4")
+
+[node name="AudioStreamPlayer2D" parent="whale" index="1"]
+position = Vector2(1303, 673)
+stream = null
+
+[node name="CollisionShape2D" parent="whale/Area2D" index="0"]
+position = Vector2(495, 371)
+shape = SubResource("RectangleShape2D_0wdfu")
+
+[node name="BackButton" type="Button" parent="."]
+offset_left = 151.0
+offset_top = 17.0
+offset_right = 438.0
+offset_bottom = 83.0
 theme_override_font_sizes/font_size = 42
 text = "Back to menu"
 script = ExtResource("2_qagqp")
 
-[connection signal="pressed" from="MarginContainer/BackButton" to="MarginContainer/BackButton" method="_on_pressed"]
+[connection signal="pressed" from="BackButton" to="BackButton" method="_on_pressed"]
+
+[editable path="dolphin"]
+[editable path="frog"]
+[editable path="penguin"]
+[editable path="polar_bear"]
+[editable path="sea_lion"]
+[editable path="shark"]
+[editable path="whale"]

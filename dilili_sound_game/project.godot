@@ -13,7 +13,7 @@ config_version=5
 config/name="Animal Sounds"
 run/main_scene="uid://ef47efeqd8lp"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://icon.svg"
+config/icon="uid://dqt0owaa2hm03"
 
 [autoload]
 
